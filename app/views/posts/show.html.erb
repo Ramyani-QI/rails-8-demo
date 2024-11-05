@@ -3,6 +3,12 @@
 <%= render @post %>
 
 <div>
+  <ul>
+    <li>id: <%= @post.id %></li>
+    <li>title: <%= @post.title %></li>
+    <li>body: <%= @post.body %></li>
+  </ul>
+
   <%= link_to "Edit this post", edit_post_path(@post) %> |
   <%= link_to "Back to posts", posts_path %>
 
