@@ -11,9 +11,14 @@
     </div>
   <% end %>
   <div>
-    <%= form.text_field :title %>
-    <%= form.text_field :body %>
-  </div>
+    <div>
+      <p><%= form.label :title %></p>
+      <p><%= form.text_field :title %></p>
+    </div>
+    <div>
+      <p><%= form.label :body %></p>
+      <p><%= form.text_area :body, cols: 30, rows: 10 %></p>
+    </div>
   <div>
     <%= form.submit %>
   </div>
